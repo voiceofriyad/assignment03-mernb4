@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoolQuest - Reliable HVAC for Every Season</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "forest-green": "#1f4f3f",
+              "emerald-custom": "#10b981",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section
+      class="bg-gradient-to-br from-forest-green via-green-800 to-emerald-700 text-white min-h-screen py-6"
+    >
+      <!-- Header -->
+      <header
+        class="flex justify-between items-center px-10 py-4 max-w-7xl mx-auto bg-white rounded-full"
+      >
+        <div class="text-2xl font-bold text-green-800 px-4 py-2">CoolQuest</div>
+        <nav class="hidden md:flex space-x-8 text-black text-lg py-2">
+          <a href="#" class="hover:text-green-200">About Us</a>
+          <a href="#" class="hover:text-green-200">Services</a>
+          <a href="#" class="hover:text-green-200">Past Work</a>
+          <a href="#" class="hover:text-green-200">Reviews</a>
+        </nav>
+        <button
+          class="bg-emerald-custom hover:bg-emerald-600 text-white px-6 py-3 rounded-full font-semibold transition-colors"
+        >
+          Get Free Quote
+        </button>
+      </header>
+
+      <!-- Main Content -->
+      <main class="max-w-7xl mx-auto px-6 py-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Left Column - Hero Text & Form -->
+          <div class="space-y-8">
+            <div>
+              <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                Reliable HVAC for Every Season
+              </h1>
+
+              <div class="space-y-4 mb-8">
+                <div class="flex items-center space-x-3">
+                  <img src="images/checkmark-badge-01.png" alt="" />
+                  <span class="text-lg"
+                    >Certified & Experienced Technicians</span
+                  >
+                </div>
+
+                <div class="flex items-center space-x-3">
+                  <img src="images/alarm-clock.png" alt="" />
+                  <span class="text-lg">Fast, Reliable Service</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <img src="images/hot-price.png" alt="" />
+                  <span class="text-lg">Transparent, Affordable Pricing</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div
+              class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20"
+            >
+              <form class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-custom"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Phone"
+                    class="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-custom"
+                  />
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <select
+                    class="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-emerald-custom"
+                  >
+                    <option>Service</option>
+                    <option>AC Repair</option>
+                    <option>Heating Repair</option>
+                    <option>Installation</option>
+                    <option>Maintenance</option>
+                  </select>
+                  <button
+                    type="submit"
+                    class="w-full bg-forest-green hover:bg-green-900 text-white py-3 rounded-lg font-semibold transition-colors"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Certifications -->
+            <div>
+              <p class="text-lg text-green-200 mb-3">Certified Installer</p>
+              <img src="images/header-bottom-logos.png" alt="" />
+            </div>
+          </div>
+
+          <!-- Right Column - Images & Reviews -->
+          <div class="space-y-6">
+            <!-- Top Section with Technician and Badge -->
+            <div class="relative">
+              <div class="bg-white rounded-l-full shadow-xl">
+                <div class="flex items-center justify-between mb-4">
+                  <img
+                    class="absolute top-0 left-0"
+                    src="images/warranty.png"
+                    alt=""
+                  />
+
+                  <img
+                    class="absolute top-5 right-0"
+                    src="images/License-no.png"
+                    alt=""
+                  />
+                </div>
+
+                <!-- Technician Image Placeholder -->
+                <div class="flex justify-center mb-4">
+                  <img
+                    class="absolute bottom-3 left-12"
+                    src="images/review.png"
+                    alt=""
+                  />
+                  <img
+                    src="images/hero model.png"
+                    alt="Professional HVAC Technician"
+                    class="rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Section with Work Images -->
+            <div class="grid grid-cols-2 gap-4">
+              <div class="relative group">
+                <img
+                  src="images/past work one.png"
+                  alt="HVAC Installation Work"
+                  class="w-full h-48 rounded-lg"
+                />
+                <div
+                  class="inset-0 bg-black/40 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+                >
+                  <button
+                    class="absolute bottom-0 right-0 bg-emerald-custom text-white px-4 py-2 rounded-lg font-semibold"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+              <div class="relative group">
+                <img
+                  src="images/past work two.png"
+                  alt="HVAC Maintenance Work"
+                  class="w-full h-48 rounded-lg"
+                />
+                <div
+                  class="inset-0 bg-black/40 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+                >
+                  <button
+                    class="absolute bottom-0 right-0 bg-emerald-custom text-white px-4 py-2 rounded-lg font-semibold"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
